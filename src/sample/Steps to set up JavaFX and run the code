@@ -1,2 +1,5 @@
-Here's the Youtube tutorial link of how to install and setup JavaFX in IntelliJ. - https://www.youtube.com/watch?v=Ope4icw6bVk 
-In order to run each chart, just have to copy the code in one of the 
+Steps: 
+- Here's the Youtube tutorial link of how to install and setup JavaFX in IntelliJ. 
+  - https://www.youtube.com/watch?v=Ope4icw6bVk 
+- In order to run each chart, just have to copy all the code in one of the chart and paste it in the Main class.
+- After that, it should be fine to run the code. If got any problem, just personally message me through Whatsapp ya.
