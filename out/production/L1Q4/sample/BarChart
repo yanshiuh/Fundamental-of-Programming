@@ -1,0 +1,47 @@
+package sample;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+    final static String jan = "Jan";
+    final static String feb = "Feb";
+    final static String mar = "March";
+    final static String april = "April";
+    final static String may = "May";
+    final static String jun = "Jun";
+
+    @Override public void start(Stage stage) {
+        stage.setTitle("Bar Chart Sample");
+        final CategoryAxis xAxis = new CategoryAxis();
+        final NumberAxis yAxis = new NumberAxis();
+        final BarChart<String,Number> bc =
+                new BarChart<String,Number>(xAxis,yAxis);
+        bc.setTitle("Total Sales of Product A");
+        xAxis.setLabel("Month");
+        yAxis.setLabel("Amount");
+
+        XYChart.Series series1 = new XYChart.Series();
+        series1.setName("amount");
+        series1.getData().add(new XYChart.Data(jan, 2500));
+        series1.getData().add(new XYChart.Data(feb, 1600));
+        series1.getData().add(new XYChart.Data(mar, 2000));
+        series1.getData().add(new XYChart.Data(april, 2700));
+        series1.getData().add(new XYChart.Data(may, 3200));
+        series1.getData().add(new XYChart.Data(jun, 800));
+
+        Scene scene  = new Scene(bc,800,600);
+        bc.getData().addAll(series1);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
