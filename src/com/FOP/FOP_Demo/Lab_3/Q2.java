@@ -20,3 +20,24 @@ public class Q2 {
         System.out.println(num + " is " + numInWord);
     }
 }
+
+/*
+        switch (num) {
+                case 0:
+                numInWord = "zero";
+                break;
+                case 1:
+                numInWord = "one";
+                break;
+                case 2:
+                numInWord = "two";
+                break;
+                case 3:
+                numInWord = "three";
+                break;
+                case 4:
+                numInWord = "four";
+                break;
+default:
+        numInWord = "five";
+        }*/

@@ -8,20 +8,18 @@ public class Q6 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter radius: ");
-        int radius = sc.nextInt();
+        double radius = sc.nextInt();
 
         System.out.print("Enter (x,y): ");
-        int x = sc.nextInt();
-        int y = sc.nextInt();
+        double x = sc.nextInt();
+        double y = sc.nextInt();
 
-        if (x > 0 && y > 0) {
-            if (x > radius || y > radius) System.out.println("The point is outside the circle");
-            else System.out.println("The point is inside the circle");
-        } else // gt negative coordinate
-            {
-            radius = -radius;
-            if (x < radius || y < radius) System.out.println("The point is outside the circle");
-            else System.out.println("The point is inside the circle");
-        }
+        double distance = Math.sqrt(Math.pow(x, 2) + Math.pow(y,2)); // Pythagorean theorem
+        System.out.printf("Distance: %.2f\n", distance);
+
+        if (distance > radius)
+            System.out.println("The point is outside the circle");
+        else
+            System.out.println("The point is inside the circle");
     }
 }

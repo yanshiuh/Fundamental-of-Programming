@@ -8,7 +8,7 @@ public class Q3 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Sales Volume: ");
-        int salesVolume = sc.nextInt();
+        double salesVolume = sc.nextInt();
         double commission;
 
         if (salesVolume <= 100) commission = salesVolume * 0.05;
@@ -16,6 +16,6 @@ public class Q3 {
         else if (salesVolume <= 1000) commission = salesVolume * 0.10;
         else commission = salesVolume * 0.125;
 
-        System.out.printf("Total commission: RM %.2f", commission);
+        System.out.printf("Total commission: %.2f", commission);
     }
 }

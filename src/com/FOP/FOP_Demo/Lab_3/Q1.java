@@ -8,45 +8,45 @@ public class Q1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter two integer number: ");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        double num1 = sc.nextInt();
+        double num2 = sc.nextInt();
 
         System.out.print("Enter the operand: ");
         char ope = sc.next().charAt(0);
-        int ans = 0;
+        double ans = 0;
         boolean valid = true;
+        String equation = "";
 
         if (ope == '+') ans = num1 + num2;
         else if (ope == '-') ans = num1 - num2;
         else if (ope == '*') ans = num1 * num2;
         else if (ope == '/') ans = num1 / num2;
-        else {
-            valid = false;
-            System.out.println("*** Invalid operation ***");
-        }
+        else if (ope == '%') ans = num1 % num2;
+        else valid = false;
 
-
-        if (valid) System.out.println(num1 + " " + ope + " " + num2 + " = " + ans);
+        equation = valid ? num1 + " " + ope + " " + num2 + " = " + ans : "\n*** Invalid operation ***";
+        System.out.println(equation);
     }
 }
 
 
 
-//        switch (ope) {
-//            case '+':
-//                ans = num1 + num2;
-//                break;
-//            case '-':
-//                ans = num1 - num2;
-//                break;
-//            case '*':
-//                ans = num1 * num2;
-//                break;
-//            case '/':
-//                ans = num1 / num2;
-//                break;
-//            default:
-//                System.out.println("Invalid operation");
-//                valid = false;
-//                break;
-//        }
+/*
+        switch (ope) {
+            case '+':
+                ans = num1 + num2;
+                break;
+            case '-':
+                ans = num1 - num2;
+                break;
+            case '*':
+                ans = num1 * num2;
+                break;
+            case '/':
+                ans = num1 / num2;
+                break;
+            default:
+                System.out.println("Invalid operation");
+                valid = false;
+                break;
+        }*/
