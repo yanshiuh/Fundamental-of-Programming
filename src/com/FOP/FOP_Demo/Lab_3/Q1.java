@@ -8,8 +8,8 @@ public class Q1 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter two integer number: ");
-        double num1 = sc.nextInt();
-        double num2 = sc.nextInt();
+        double num1 = sc.nextDouble();
+        double num2 = sc.nextDouble();
 
         System.out.print("Enter the operand: ");
         char ope = sc.next().charAt(0);
@@ -24,7 +24,7 @@ public class Q1 {
         else if (ope == '%') ans = num1 % num2;
         else valid = false;
 
-        equation = valid ? num1 + " " + ope + " " + num2 + " = " + ans : "\n*** Invalid operation ***";
+        equation = valid ? num1 + " " + ope + " " + num2 + " = " + String.format("%.2f", ans) : "\n*** Invalid operation ***";
         System.out.println(equation);
     }
 }

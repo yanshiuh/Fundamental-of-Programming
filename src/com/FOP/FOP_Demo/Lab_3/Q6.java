@@ -8,11 +8,11 @@ public class Q6 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter radius: ");
-        double radius = sc.nextInt();
+        double radius = sc.nextDouble();
 
         System.out.print("Enter (x,y): ");
-        double x = sc.nextInt();
-        double y = sc.nextInt();
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
 
         double distance = Math.sqrt(Math.pow(x, 2) + Math.pow(y,2)); // Pythagorean theorem
         System.out.printf("Distance: %.2f\n", distance);

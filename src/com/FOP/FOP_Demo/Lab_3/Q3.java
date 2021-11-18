@@ -8,7 +8,7 @@ public class Q3 {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Sales Volume: ");
-        double salesVolume = sc.nextInt();
+        double salesVolume = sc.nextDouble();
         double commission;
 
         if (salesVolume <= 100) commission = salesVolume * 0.05;
