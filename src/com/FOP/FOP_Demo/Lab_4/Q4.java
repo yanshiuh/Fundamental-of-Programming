@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class Q4 {
 
     public static void main(String[] args) {
+        //1. find the total days before the specific month = 120
+        //2. add the total days with the first day of the year = 125
+        //3. modulus it with 7, remainder = the first day of the month = 6
+        //4. display output
+
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the year: ");
