@@ -7,7 +7,7 @@ public class Q5 {
     public static void main(String[] args) {
         Random r = new Random();
 
-        int num = r.nextInt(10000);
+        int num = r.nextInt(10001);
         System.out.println("The random number is " + num);
 
         int sum = 0;

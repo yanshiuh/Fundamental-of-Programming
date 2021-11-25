@@ -13,6 +13,7 @@ public class Q4 {
 
         for (int i = 0; i < 2; i++) {
             System.out.println("Round " + (i+1));
+
             dice = r.nextInt(6) + 1;
             System.out.println("Player 1's dice: " + dice);
             scoreP1 += dice;

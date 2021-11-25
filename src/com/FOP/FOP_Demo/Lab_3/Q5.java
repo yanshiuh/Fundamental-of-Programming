@@ -18,7 +18,7 @@ public class Q5 {
         int f = sc.nextInt();
 
         int x, y;
-        if (((a*d) - (b*c)) == 0) {
+        if (((a * d) - (b * c)) == 0) {
             System.out.println("The equation has no solution");
         } else {
             x = ((e * d) - (b * f)) / ((a * d) - (b * c));

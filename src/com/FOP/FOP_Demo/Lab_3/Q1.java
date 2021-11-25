@@ -24,7 +24,9 @@ public class Q1 {
         else if (ope == '%') ans = num1 % num2;
         else valid = false;
 
-        equation = valid ? num1 + " " + ope + " " + num2 + " = " + String.format("%.2f", ans) : "\n*** Invalid operation ***";
+        equation = valid ?
+                num1 + " " + ope + " " + num2 + " = " + String.format("%.2f", ans)
+                : "\n*** Invalid operation ***";
         System.out.println(equation);
     }
 }
@@ -46,7 +48,7 @@ public class Q1 {
                 ans = num1 / num2;
                 break;
             default:
-                System.out.println("Invalid operation");
                 valid = false;
                 break;
-        }*/
+        }
+*/

@@ -8,7 +8,7 @@ public class Q2 {
         Random r = new Random();
 
         int num = r.nextInt(6);
-        String numInWord = "";
+        String numInWord;
 
         if (num == 0) numInWord = "zero";
         else if (num == 1) numInWord = "one";
