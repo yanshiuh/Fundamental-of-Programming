@@ -9,8 +9,8 @@ public class Q4 {
 
         // Generate the matrix
         int[][] matrix = new int[3][3];
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
+        for (int i = 0; i < matrix.length; i++) {         // row
+            for (int j = 0; j < matrix[i].length; j++) {  // column
                 matrix[i][j] = r.nextInt(10);
             }
         }
@@ -36,6 +36,9 @@ public class Q4 {
             new_row++;
             new_column = 0;
         }
+
+        // new matrix: 0,0 -> 0,1 -> 0,2
+        // 0ld matrix: 2,0 -> 1,0 -> 0,0
 
         System.out.println("After rotates 90 degree clockwise");
         for (int i = 0; i < new_matrix.length; i++) {
@@ -63,5 +66,5 @@ public class Q4 {
 // 2 main concepts:
 // - column of old matrix becomes row of new matrix
 // - start from last element of the column of the old matrix
-//   as it would become the first element of the row of the new matrix
+//   and assign it become the first element of the row of the new matrix
             

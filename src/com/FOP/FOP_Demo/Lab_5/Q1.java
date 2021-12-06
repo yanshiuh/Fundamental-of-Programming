@@ -22,13 +22,13 @@ public class Q1 {
         }
 
         // Find the highest score
-        int highest = scores[0];  // 100
+        int highest = scores[0];  // 0
         for (int score : scores)
             if (score > highest) highest = score;
         System.out.println("\nThe highest score: " + highest);
 
         // Find the lowest score
-        int lowest = scores[0];   // 0
+        int lowest = scores[0];   // 100
         for (int score : scores)
             if (score < lowest) lowest = score;
         System.out.println("The lowest score: " + lowest);

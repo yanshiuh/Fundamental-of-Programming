@@ -17,7 +17,7 @@ public class Q3 {
             int total_hours = 0;
 
             for (int i = 0; i < 7; i++) {
-                employee_7days[i] = r.nextInt(8) + 1;
+                employee_7days[i] = r.nextInt(8) + 1; // 0-7, 1-8
                 total_hours += employee_7days[i];
             }
 
