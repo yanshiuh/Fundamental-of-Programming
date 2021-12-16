@@ -7,7 +7,6 @@ public class Q6 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Random r = new Random();
 
         System.out.print("Enter the number of row of Pascal Triangle to generate: ");
         int row = sc.nextInt();
@@ -21,7 +20,7 @@ public class Q6 {
         for (int i = 1; i < matrix.length; i++) {
             // iterate each column starting from column 2 because have to compare with previous column
             for (int j = 1; j < matrix[i].length; j++)
-                // sum of the top and top left
+                // sum of the upper and upper left
                 matrix[i][j] = matrix[i - 1][j] + matrix[i - 1][j - 1];
         }
 
