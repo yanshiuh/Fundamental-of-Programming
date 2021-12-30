@@ -12,6 +12,8 @@ public class Q2 {
 
         System.out.println();
 
+        // if height = even number, print 2 parts (2 triangle)
+        // if height = odd number, print 3 parts (1 triangle, middle part, 1 triangle)
         int diamond_height = 7;
         int half_diamond = diamond_height / 2;
         for (int i = 0; i < half_diamond; i++) {    // upper part

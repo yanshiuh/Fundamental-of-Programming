@@ -14,8 +14,10 @@ public class Q4 {
            ^          ^           ^
         dividend    divisor   remainder
 
+        *
         next_dividend = current_divisor
         next_divisor = current_remainder
+        *
 
         2nd round:
            8     /    1     =  8 r 0

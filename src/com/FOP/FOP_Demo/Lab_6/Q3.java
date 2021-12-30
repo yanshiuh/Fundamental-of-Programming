@@ -19,13 +19,13 @@ public class Q3 {
 
     public static int[] reverse_numbers(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
-            int num = numbers[i];
+            int num = numbers[i];  // 834
             // reverse number
-            int reverseNum = 0;
+            int reverseNum = 0;    // 0,
             while (num > 0) {
-                reverseNum *= 10;       // 0, 40, 480, 4820
-                reverseNum += num % 10; // 4, 48, 482, 4822
-                num /= 10;              // 228, 22, 2, 0
+                reverseNum *= 10;       // 0, 40, 430
+                reverseNum += num % 10; // 4, 43, 438
+                num /= 10;              // 83, 8, 0
             }
 
             numbers[i] = reverseNum;
