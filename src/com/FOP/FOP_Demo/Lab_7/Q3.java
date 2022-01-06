@@ -31,7 +31,7 @@ public class Q3 {
               for (int i = sentence.length() - 1; i >= 0; i--)
                   writeText.print(sentence.charAt(i));
 
-              writeText.println();
+              writeText.println(); // move to new line
           }
 
           readText.close();

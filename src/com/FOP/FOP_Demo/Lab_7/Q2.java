@@ -30,6 +30,8 @@ public class Q2 {
             Scanner readText = new Scanner(new FileInputStream("index.html"));
             while (readText.hasNextLine())
                 System.out.println(readText.nextLine());
+
+            readText.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         }

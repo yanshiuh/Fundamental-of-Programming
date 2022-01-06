@@ -24,6 +24,11 @@ class BurgerStall {
         this.ID = ID;
     }
 
+    public BurgerStall(String ID, int sold_per_stall) {
+        this.ID = ID;
+        this.sold_per_stall = sold_per_stall;
+    }
+
     public void sold(int amount) {
         sold_per_stall += amount;
 

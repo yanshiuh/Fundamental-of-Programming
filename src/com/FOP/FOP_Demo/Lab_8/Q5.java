@@ -5,22 +5,22 @@ import java.util.Random;
 public class Q5 {
 
     public static void main(String[] args) {
-        Game g1 = new Game("Durant");
-        Game g2 = new Game("Harden");
+        Game player1 = new Game("Durant");
+        Game player2 = new Game("Harden");
 
-        while (!g1.isWin() && !g2.isWin()) {
-            g1.move();
-            g2.move();
-            System.out.println(g1.getPlayer_name() + "'s score: " + g1.getScore());
-            System.out.println(g2.getPlayer_name() + "'s score: " + g2.getScore());
+        while (!player1.isWin() && !player2.isWin()) {
+            player1.move();
+            player2.move();
+            System.out.println(player1.getPlayer_name() + "'s score: " + player1.getScore());
+            System.out.println(player2.getPlayer_name() + "'s score: " + player2.getScore());
 
             System.out.println();
         }
 
-        if (g1.isWin())
-            System.out.println(g1.getPlayer_name() + " win");
+        if (player1.isWin())
+            System.out.println(player1.getPlayer_name() + " win");
         else
-            System.out.println(g2.getPlayer_name() + " win");
+            System.out.println(player2.getPlayer_name() + " win");
     }
 }
 

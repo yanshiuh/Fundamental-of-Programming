@@ -50,21 +50,21 @@ class Money {
     public void calculate() {
         double temp = amount;
 
-        RM100 += temp / 100;
-        temp -= RM100 * 100;
-
+        // temp = RM 335.21
+        RM100 += temp / 100; // 3
+        temp -= RM100 * 100; // 335.21 - 300 = 35.21
         temp = Math.round(temp*100)/100.0;  
 
         RM50 += temp / 50;
         temp -= RM50 * 50;
         temp = Math.round(temp*100)/100.0;
 
-        RM10 += temp / 10;
-        temp -= RM10 * 10;
+        RM10 += temp / 10; // 3
+        temp -= RM10 * 10; // 35.21 - 30 = 5.21
         temp = Math.round(temp*100)/100.0;
 
-        RM5 += temp / 5;
-        temp -= RM10 * 10;
+        RM5 += temp / 5; // 1
+        temp -= RM5 * 5; // 5.21 - 5 = 0.21
         temp = Math.round(temp*100)/100.0;
 
         RM1 += temp / 1;

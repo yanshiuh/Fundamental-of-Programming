@@ -38,6 +38,7 @@ public class Q6 {
                     // if both productID are same = matched
                     if (order[1].equalsIgnoreCase(product[i][0])) {
                         double totalPrice = Integer.parseInt(order[2]) * Double.parseDouble(product[i][2]);
+
                         System.out.printf("%-20s%-20s%-20s%-20s%-20.2f\n", product[i][0], product[i][1], order[2], product[i][2], totalPrice);
                     }
                 }
